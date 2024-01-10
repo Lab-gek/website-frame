@@ -28,9 +28,20 @@ body{
     animation: move 13s linear infinite;
 
 }
+@keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
 .round-moving-thingy:hover{
     animation-play-state: paused;
 }
+.container-move:hover .round-moving-thingy {
+    animation-play-state: paused;
+  }
 
 .container-move{
     display: flex;
@@ -39,14 +50,7 @@ body{
 
 }
 
-@keyframes move {
-    0% {
-        transform: translateX(875%);
-    }
-    100% {
-        transform: translateX(-875%);
-    }
-}
+
 
 .title-main{
 font-size: 100px;

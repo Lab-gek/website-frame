@@ -1,16 +1,12 @@
 
-const cards = document.querySelectorAll('.round-moving-thingy');
-
-cards.forEach((card) => {
-    card.addEventListener('mouseenter', () => {
-        cards.forEach((otherCard) => {
-            otherCard.style.animationPlayState = 'paused';
-        });
+document.querySelector('.container-move').addEventListener('mouseover', function() {
+    document.querySelectorAll('.round-moving-thingy').forEach(function(div) {
+      div.classList.add('animation-paused');
     });
-
-    card.addEventListener('mouseleave', () => {
-        cards.forEach((otherCard) => {
-            otherCard.style.animationPlayState = 'running';
-        });
+  });
+  
+  document.querySelector('.container-move').addEventListener('mouseout', function() {
+    document.querySelectorAll('.round-moving-thingy').forEach(function(div) {
+      div.classList.remove('animation-paused');
     });
-});
+  });

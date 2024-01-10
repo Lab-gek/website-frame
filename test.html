@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Thijmen</title>
+    <style>
+        #carousel {
+            width: 100vw;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .item {
+            width: 33.33%;
+            height: 100px;
+            position: absolute;
+            animation: slide 14s linear infinite;
+            left: 150%; /* Set initial position outside of the viewport */
+        }
+
+        #item1 { background-color: red; animation-delay: 0s; }
+        #item2 { background-color: green; animation-delay: 2.33s; }
+        #item3 { background-color: blue; animation-delay: 4.66s; }
+        #item4 { background-color: yellow; animation-delay: 7s; }
+        #item5 { background-color: purple; animation-delay: 9.33s; }
+        #item6 { background-color: orange; animation-delay: 11.66s; }
+
+        @keyframes slide {
+            0% { left: 150%; }
+            100% { left: -100%; }
+        }
+
+        #carousel:hover .item {
+            animation-play-state: paused;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="carousel">
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">1</div>
+        <div id="item3" class="item">1</div>
+        <div id="item4" class="item">1</div>
+        <div id="item5" class="item">1</div>
+        <div id="item6" class="item">1</div>
+    </div>
+
+    
+</body>
+</html>
