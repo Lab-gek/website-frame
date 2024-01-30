@@ -1,9 +1,9 @@
 .container {
     display: grid;
-    height: 100vh;
+    
     overflow: hidden;
 }
-p, a, h1{
+p, a, h1, div{
     color: rgb(214, 210, 210);
     text-align: center;
     font-family: Arial;
@@ -56,12 +56,12 @@ font-size: 100px;
   left: 150%; /* Set initial position outside of the viewport */
 }
 
-#item1 { background-color: red; animation-delay: 0s; }
-#item2 { background-color: green; animation-delay: 2.33s; }
-#item3 { background-color: blue; animation-delay: 4.66s; }
-#item4 { background-color: yellow; animation-delay: 7s; }
-#item5 { background-color: purple; animation-delay: 9.33s; }
-#item6 { background-color: orange; animation-delay: 11.66s; }
+#item1 { animation-delay: 0s; }
+#item2 { animation-delay: 2.33s; }
+#item3 { animation-delay: 4.66s; }
+#item4 { animation-delay: 7s; }
+#item5 { animation-delay: 9.33s; }
+#item6 { animation-delay: 11.66s; }
 
 @keyframes slide {
   0% { left: 150%; }
@@ -70,7 +70,4 @@ font-size: 100px;
 
 #carousel:hover .item {
   animation-play-state: paused;
-}
-.padding{
-  padding-top: 10px;
 }
