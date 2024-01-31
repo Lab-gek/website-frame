@@ -1,7 +1,6 @@
 .container {
     display: grid;
-    
-    overflow: hidden;
+
 }
 p, a, h1, div{
     color: rgb(214, 210, 210);
@@ -14,7 +13,7 @@ a{
 }
 
 body{
-  overflow: hidden;
+
   background-color: black;
 }
 .round-moving-thingy{
@@ -36,13 +35,11 @@ body{
 
 }
 
-
-
 .title-main{
 font-size: 100px;
 }
 #carousel {
-  width: 100vw;
+  width: 99vw;
   height: 100px;
   overflow: hidden;
   position: relative;
@@ -50,10 +47,12 @@ font-size: 100px;
 
 .item {
   width: 33.33%;
-  height: 100px;
+  height: auto;
   position: absolute;
   animation: slide 14s linear infinite;
   left: 150%; /* Set initial position outside of the viewport */
+  text-rendering: optimizeSpeed;
+  
 }
 
 #item1 { animation-delay: 0s; }
@@ -70,4 +69,8 @@ font-size: 100px;
 
 #carousel:hover .item {
   animation-play-state: paused;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 100hw  ;
 }
