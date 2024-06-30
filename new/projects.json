@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "title": "Weer weer app",
+    "description": "Een informatica project waarbij we een weer app hebben gemaakt.",
+    "type": "Programmeren",
+    "date": "24 juni 2024",
+    "htmldata": "<a href=\"https://skelter-studio-s.github.io/weer-app/\">De weer app</a>",
+    "skils": "HTML, CSS, JS, team work, project mangement, GIT(HUB)"
+  },
+  {
+    "id": "2",
+    "title": "Snap game",
+    "description": "Een informatica project waarbij we een snap game hebben gemaakt. <br> het eind resultaat hier van is een game gemaakt Doomsday clicker.",
+    "type": "Game",
+    "date": " 19 november 2023",
+    "htmldata": "project2.jpg",
+    "skils": "Team Work, Project Mangement, Game design, Game development, "
+  },
+  {
+    "id": "3",
+    "title": "O&O Project. Ursem modulair bouw BV  ",
+    "description": "This is the second project.",
+    "type": "design",
+    "date": "2023-05-15",
+    "htmldata": "project2.jpg"
+  },
+  {
+    "id": "4",
+    "title": "O&O Project. STI Engineering  ",
+    "description": "This is the second project.",
+    "type": "design",
+    "date": "2023-05-15",
+    "htmldata": "project2.jpg"
+  }
+]
